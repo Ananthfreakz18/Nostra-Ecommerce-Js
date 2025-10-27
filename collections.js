@@ -22,16 +22,12 @@ document.getElementById("side-navbar-close").addEventListener("click",()=>{
 })
 
 
-    
-   
-
-
 
 var container=document.querySelector(".products")
 products.forEach((product)=>{
     var createItem = document.createElement("div")
     createItem.classList.add("product")
-    createItem.innerHTML=` <img style="width: 20vw;" src="img/${product.src}">
+    createItem.innerHTML=` <img style="width: 20vw; height:20vw" src="${product.src}">
     <h1>${product.name}</h1>
     <p>₹${product.price}</p>
     <tags style="visibility:hidden;">${product.tags}</tags>`
@@ -58,9 +54,6 @@ tags.forEach((tag)=>{
             update()
 
         }
-
-        
-       
     })
 })
 
